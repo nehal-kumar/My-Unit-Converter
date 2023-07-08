@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title> Unit Converter</title>
+    <meta name="description"
+        content="Quick, free, online unit converter that converts common units of measurement, along with 77 other converters covering an assortment of units. The site also includes a predictive tool that suggests possible conversions based on input, allowing for easier navigation while learning more about various unit systems." />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="83ftfjb0tb6LAoLXRzmOHOHKHxlS4fSEuHfCnKQaq0k" />
+    <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+    
+</head>
+
+<body>
+    <div id="headerout">
+        <div id="header">
+            <div id="logo"><a href="/"><img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288"
+                        height="28" alt="UnitConverters.net"></a></div>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            <h1>Lenght</h1>
+            <form>
+                <label for="from-unit">From:</label>
+                <input type="number" id="from-value" placeholder="Enter Value">
+                <select id="from-unit">
+                    <option value="inches">Inches</option>
+                    <option value="feet">Feet</option>
+                    <option value="yards">Yards</option>
+                    <option value="miles">Miles</option>
+                    <option value="millimeters">Millimeters</option>
+                    <option value="centimeters">Centimeters</option>
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+
+                </select>
+                <label for="to-unit">To:</label>
+                <select id="to-unit">
+                    <option value="inches">Inches</option>
+                    <option value="feet">Feet</option>
+                    <option value="yards">Yards</option>
+                    <option value="miles">Miles</option>
+                    <option value="millimeters">Millimeters</option>
+                    <option value="centimeters">Centimeters</option>
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+
+                </select>
+                <button type="button" onclick="convert()">Convert</button>
+            </form>
+            <div class="result" id="result"></div>
+
+            <script src="scri.js"></script>
+        </div>
+        <div class="child">
+            <h1>Temperature</h1>
+            <form>
+                <label for="unit">From:</label>
+                <input type="number" id="value" placeholder="Enter Value">
+                <select id="unit">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fehrenheit">Fehrenheit</option>
+
+                </select>
+                <label for="unit">To:</label>
+                <select id="uni">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fehrenheit">Fehrenheit</option>
+
+                </select>
+                <button type="button" onclick="conver()">Convert</button>
+            </form>
+            <div class="result" id="res"></div>
+
+            
+
+        </div>
+        <div class="child">
+            <h1>Area</h1>
+            <form>
+                <label for="unit1">From:</label>
+                <input type="number" id="value1" placeholder="Enter Value">
+                <select id="unit1">
+                    <option value="square-meter">Square Meter</option>
+                    <option value="square-kilometer">Square Kilometer</option>
+                    <option value="square-centimeter">Square Centimeter</option>
+                    <option value="square-milimeter">Square Milimeter</option>
+                    <option value="Hectare">Hectare</option>
+                    <option value="square-mile">Square Mile</option>
+                    <option value="square-yard">Square Yard</option>
+
+                </select>
+                <label for="unit2">To:</label>
+                <select id="unit2">
+                    <option value="square-meter">Square Meter</option>
+                    <option value="square-kilometer">Square Kilometer</option>
+                    <option value="square-centimeter">Square Centimeter</option>
+                    <option value="square-milimeter">Square Milimeter</option>
+                    <option value="Hectare">Hectare</option>
+                    <option value="square-mile">Square Mile</option>
+                    <option value="square-yard">Square Yard</option>
+                </select>
+                <button type="button" onclick="convert1()">Convert</button>
+            </form>
+            <div class="result" id="result1"></div>
+        </div>
+        <div class="child">
+            <h1>Weight</h1>
+            <form>
+                <label for="unit3">From:</label>
+                <input type="number" id="value3" placeholder="Enter Value">
+                <select id="unit3">
+
+                    <option value="pounds">Pounds</option>
+                    <option value="ounces">Ounces</option>
+                    <option value="grams">Grams</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="tons">Tons</option>
+
+                </select>
+                <label for="unit4">To:</label>
+                <select id="unit4">
+                    <option value="pounds">Pounds</option>
+                    <option value="ounces">Ounces</option>
+                    <option value="grams">Grams</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="tons">Tons</option>
+
+                </select>
+                <button type="button" onclick="convert2()">Convert</button>
+            </form>
+            <div class="result" id="result2"></div>
+        </div>
+        <div class="child">
+            <h1>Time</h1>
+            <form>
+                <label for="unit5">From:</label>
+                <input type="number" id="value5" placeholder="Enter Value">
+                <select id="unit5">
+                    <option value="second">Second</option>
+                    <option value="Minute">Minute</option>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="Month">Month</option>
+                    <option value="Year">Year</option>
+
+                </select>
+                <label for="unit5">To:</label>
+                <select id="unit6">
+                    <option value="second">Second</option>
+                    <option value="Minute">Minute</option>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="Month">Month</option>
+                    <option value="Year">Year</option>
+                </select>
+                <button type="button" onclick="convert3()">Convert</button>
+            </form>
+
+            <div class="result" id="result3"></div>
+
+        </div>
+
+        
+    </div>
+
+    
+
+</body>
